@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+<script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <title>Drill #2</title>
+
+    <style>
+        h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: floralwhite;
+            background-color: rgb(102, 149, 89);
+            border: 2px dotted floralwhite;
+            border-radius: 15px;
+        }
+        form{
+            border: 2px rgb(165, 223, 166);
+            border-radius: 15px;
+            background-color: floralwhite;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(84, 128, 91);
+        }
+
+        input{
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(156, 224, 163);
+            border: 2px solid floralwhite;
+            background-color: rgb(209, 245, 217);
+            border-radius: 8px;
+
+        }
+
+        body{
+            background-image: url(https://i.pinimg.com/1200x/18/e3/e8/18e3e823335c4b151fc88fc70d0ef8fb.jpg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Arithmetic Operations</h1> 
+   <form>
+        <input type="number" id="number1" placeholder="Enter first number"><br>
+        <input type="number" id="number2" placeholder="Enter second number"><br>
+        <input type="button" py-dblclick="adding_numbers" value="Add">
+        <input type="button" py-click="subtracting_numbers" value="Subtract">
+        <input type="button" py-dblclick="multiplying_numbers" value="Multiply">
+        <input type="button" py-click="dividing_numbers" value="Divide">
+        <input type="button" py-dblclick="floor_numbers" value="Floor">
+        <input type="button" py-click="modulus_numbers" value="Modulus">
+        <input type="button" py-dblclick="exponents_numbers" value="Exponentiation">
+    </form>
+    <div id="result" style="color: white; font-size: 30px; font-family: fantasy;"></div>
+    <py-script src="main.py"></py-script>
+</body>
+</html>
